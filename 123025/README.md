@@ -16,14 +16,9 @@ Notes for covering Variables and associated concepts of parameterization; locals
 
 git clone --no-checkout https://github.com/aaron-dm-mcdonald/Class7-notes.git
 cd Class7-notes
-
-git sparse-checkout init --cone
-git sparse-checkout set 123025/syntax-demo 123025/simple-code-no-refactor
-
+git sparse-checkout set --cone 123025/syntax-demo 123025/simple-code-no-refactor
 git checkout
-mv 123025/ ..
-cd ..
-rm -rf Class7-notes/
+cd .. && mv ./Class7-notes/123025/ ./variable-lab && rm -rf ./Class7-notes/
 ```
 
 ---
